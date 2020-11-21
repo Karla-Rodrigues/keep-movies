@@ -1,0 +1,67 @@
+<div class="default">
+
+      <div class="blue-box">
+
+            <div *ngIf="movie; else notShow" class="movies">
+
+                  <div class="row">
+
+                        <div class="col box">
+
+                              <img [src]="movie.Poster" alt="picture" />
+
+                        </div>
+
+                        <div class="col box">
+
+                              <h4 class="title"> {{ movie.Title }} </h4>
+                              <h6> {{ movie.Year }} </h6>
+                              <h6> {{ movie.Genre }} </h6>
+                              <br>
+
+                              <p> {{ movie.Plot }} </p>
+
+                              <h5> <i class="fas fa-award"></i> Award </h5>
+                              <h6> {{ movie.Awards }} </h6>
+                              <h5> <i class="fab fa-imdb"></i> Rating </h5>
+                              <h6> {{ movie.imdbRating }} </h6>
+
+
+                        </div>
+
+                        <div class="col box">
+
+
+
+                              <h5> <i class="fas fa-chalkboard-teacher"></i> Director </h5>
+                              <h6> {{ movie.Director }} </h6>
+                              <h5> <i class="fas fa-users"></i> Actors </h5>
+                              <h6> {{ movie.Actors }} </h6>
+                              <h5> <i class="fas fa-globe"></i> Country </h5>
+                              <h6> {{movie.Country}} </h6>
+                              <h5> <i class="fas fa-language"></i> Languages </h5>
+                              <h6> {{movie.Language}} </h6>
+                              <h5> <i class="fas fa-film"></i> Rated </h5>
+                              <h6> {{ movie.Rated }} </h6>
+
+                              <a class="return" href=# routerLink="/list/{{name}}/{{type}}/{{page}}">
+                                    <i class="fas fa-reply"></i>
+                              </a>
+
+                        </div>
+
+                  </div>
+
+            </div>
+
+            <ng-template #notShow>
+                  <p>
+                        Use full words to start the search.
+                  </p>
+            </ng-template>
+
+      </div>
+
+
+
+</div>

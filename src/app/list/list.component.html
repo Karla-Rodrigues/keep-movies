@@ -1,0 +1,73 @@
+<div class="default">
+
+      <div class="banner">
+
+            <div class="banner-search">
+
+                  <input class="searchTerm" type="text" [(ngModel)]="name" placeholder="Start here!">
+
+                  <select class="searchType" [(ngModel)]="type">
+                        <option value="all" selected="selected">All</option>
+                        <option value="movie">Movie</option>
+                        <option value="series">Series</option>
+                  </select>
+
+                  <button class="searchButton" type="submit" (click)="FetchMovies()">
+                        <i class="fa fa-search"></i>
+                  </button>
+
+            </div>
+
+      </div>
+
+      <div class="banner">
+
+            <div class="banner-total" *ngIf="moviesList">
+
+                  <ng-template [ngIf]="moviesList.totalResults" [ngIfElse]="none">
+
+                        <span class="pageButton" type="submit" (click)="PreviousPage()">
+                              <i class="fas fa-chevron-left"></i>
+                        </span>
+
+                        <ng-template [ngIf]="moviesList.totalResults > end" [ngIfElse]="endList">
+                              <h4> {{start}} to {{end}} from {{moviesList.totalResults}} </h4>
+                              <span class="pageButton" type="submit" (click)="NextPage()">
+                                    <i class="fas fa-chevron-right"></i>
+                              </span>
+                        </ng-template>
+
+                        <ng-template #endList>
+                              <h4> {{start}} to {{moviesList.totalResults}} from {{moviesList.totalResults}} </h4>
+                              <span class="pageButton" type="submit">
+                                    <i class="fas fa-chevron-right"></i>
+                              </span>
+                        </ng-template>
+
+                  </ng-template>
+
+                  <ng-template #none>
+                        <h4> Sorry, no results. Let's try a new full word! </h4>
+                  </ng-template>
+
+            </div>
+
+      </div>
+
+      <div class="movies">
+
+            <ul *ngIf="moviesList">
+
+                  <li *ngFor="let movie of moviesList.Search">
+
+                        <a href=# routerLink="/detail/{{name}}/{{type}}/{{page}}/{{ movie.imdbID }}">
+                              <img [src]="movie.Poster" alt="Poster not avaible" />
+                        </a>
+                        <h3> {{ movie.Year }} </h3>
+                        <p> {{ movie.Title }} </p>
+
+                  </li>
+            </ul>
+      </div>
+
+</div>

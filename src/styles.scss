@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css');
+
+
+:root{
+  font-size: 16px;
+}
+
+/* Media */
+
+@media (min-width: 150px) {
+  :root{
+    font-size: 10px;
+  }
+  .movies li {
+    width: 90%;
+  }
+  .page-banner h2{
+    font-size: 4rem;
+  }
+}
+@media (min-width: 780px) {
+  :root{
+    font-size: 12px;
+  }
+  .movies li {
+    width: 45%;
+  }
+  .page-banner h2{
+    font-size: 6.50rem;
+  }
+}
+@media (min-width: 990px) {
+  :root{
+    font-size: 14px;
+  }
+  .movies li {
+    width: 30%;
+  }
+  .page-banner h2{
+    font-size: 6.50rem;
+  }
+}
+@media (min-width: 1200px) {
+  :root{
+    font-size: 16px;
+  }
+  .movies li {
+    width: 30%;
+  }
+  .page-banner h2{
+    font-size: 6.50rem;
+  }
+}  
+
+html,body{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  font-family: 'Nunito', 'sans-serif';
+  background-color:#E7EAE1;
+}
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+    orange{
+      font-family: 'Pacifico', cursive;
+      color: #C9310C;
+    }
+    dark{
+      font-family: 'Pacifico', cursive;
+      color: #032733;
+    }
+    yellow{
+      color: #EC8C1E;
+    }
+    dark-blue{
+      color: #2C7B91;
+    }
+    blue{
+      color: #78B6B1;
+    }
+    light{
+      color: #E7EAE1;
+    }
+    
+    .wrap{
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    align-items: center;
+    }
