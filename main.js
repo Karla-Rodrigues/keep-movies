@@ -31,7 +31,7 @@ class AboutComponent {
     }
 }
 AboutComponent.ɵfac = function AboutComponent_Factory(t) { return new (t || AboutComponent)(); };
-AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutComponent, selectors: [["app-about"]], decls: 27, vars: 0, consts: [[1, "about"], [1, "about-title", "row"], [1, "col"], ["src", "../../assets/img/Karla_Social.png", "alt", "Avatar"], [1, "col-8"], [1, "dark"], [1, "red"], ["href", "https://www.linkedin.com/in/2karla/"], [1, "fab", "fa-linkedin", "fa-2x"], ["href", "https://github.com/Karla-Rodrigues"], [1, "fab", "fa-github-square", "fa-2x"], ["href", "mailto:karlaadautor@gmail.com"], [1, "fas", "fa-envelope", "fa-2x"]], template: function AboutComponent_Template(rf, ctx) { if (rf & 1) {
+AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutComponent, selectors: [["app-about"]], decls: 27, vars: 0, consts: [[1, "about"], [1, "about-title", "row"], [1, "col"], ["src", "../../assets/img/karlaSocial.png", "alt", "Avatar Karla"], [1, "col-8"], [1, "dark"], [1, "red"], ["href", "https://www.linkedin.com/in/2karla/"], [1, "fab", "fa-linkedin", "fa-2x"], ["href", "https://github.com/Karla-Rodrigues"], [1, "fab", "fa-github-square", "fa-2x"], ["href", "mailto:karlaadautor@gmail.com"], [1, "fas", "fa-envelope", "fa-2x"]], template: function AboutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
