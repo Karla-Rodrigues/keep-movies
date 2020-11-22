@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class HttpService {
 
   private apiKey = '94cbadb7';
-  private apiURL = 'http://www.omdbapi.com/';
+  private apiURL = 'https://www.omdbapi.com/';
 
   constructor(private http: HttpClient) { }
 
