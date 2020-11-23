@@ -1,3 +1,25 @@
+/* Media */
+@media (min-width: 150px) {
+  .page-banner h2{
+    font-size: 4rem; 
+  }
+}
+@media (min-width: 780px) {
+  .page-banner h2{
+    font-size: 5rem; 
+  }
+}
+@media (min-width: 990px) {
+  .page-banner h2{
+    font-size: 6rem; 
+  }
+}
+@media (min-width: 1200px) {
+  .page-banner h2{
+    font-size: 7rem; 
+  }
+}  
+
 /* Home Banner */
 .page-banner{
       background-color: #E7EAE1;
@@ -7,7 +29,7 @@
     }
 
     .page-banner-image {
-      background-image: url("../../assets/img/movie.png");
+      background-image: url("/assets/img/movie.png");
       opacity: .33;
       background-size: cover;
       position: absolute;
