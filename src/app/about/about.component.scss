@@ -1,6 +1,28 @@
+/* Media */
+@media (min-width: 150px) {
+  .about {
+      padding: 8rem 8rem 0rem 8rem; 
+  }
+}
+@media (min-width: 780px) {
+  .about {
+      padding: 8rem 15rem 0rem 15rem; 
+  }
+}
+@media (min-width: 990px) {
+  .about {
+      padding: 8rem 18rem 0rem 18rem; 
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+      padding: 8rem 20rem 0rem 20rem; 
+  }
+}  
+    
+
 /* About */
 .about {
-      padding: 8rem 15rem 0rem 15rem;
       border-style: solid;    
       border-radius: 5px;
       border: #0D2232 3px;
