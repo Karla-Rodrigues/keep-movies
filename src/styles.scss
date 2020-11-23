@@ -11,49 +11,36 @@
 }
 
 /* Media */
-
 @media (min-width: 150px) {
   :root{
     font-size: 10px;
   }
-  .movies li {
-    width: 90%;
-  }
-  .page-banner h2{
-    font-size: 4rem;
+  .wrap{
+    padding: 0; 
   }
 }
 @media (min-width: 780px) {
   :root{
     font-size: 12px;
   }
-  .movies li {
-    width: 45%;
-  }
-  .page-banner h2{
-    font-size: 6.50rem;
+  .wrap{
+    padding: 0; 
   }
 }
 @media (min-width: 990px) {
   :root{
     font-size: 14px;
   }
-  .movies li {
-    width: 30%;
-  }
-  .page-banner h2{
-    font-size: 6.50rem;
+  .wrap{
+    padding: 0 15px; 
   }
 }
 @media (min-width: 1200px) {
   :root{
     font-size: 16px;
   }
-  .movies li {
-    width: 30%;
-  }
-  .page-banner h2{
-    font-size: 6.50rem;
+  .wrap{
+    padding: 0 15px; 
   }
 }  
 
@@ -93,7 +80,6 @@ html,body{
     
     .wrap{
     width: 100%;
-    padding: 0 15px;
     margin: auto;
     align-items: center;
     }

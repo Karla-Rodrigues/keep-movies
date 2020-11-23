@@ -71,6 +71,8 @@ export class ListComponent implements OnInit {
 
     this.AccessMovies();
 
+    window.scrollTo(0, 0);
+
   }
 
   PreviousPage() {
@@ -85,6 +87,8 @@ export class ListComponent implements OnInit {
     }
 
     this.AccessMovies();
+
+    window.scrollTo(0, 0);
 
   }
 
