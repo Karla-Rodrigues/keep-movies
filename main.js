@@ -26,9 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class AboutComponent {
-    constructor() {
-        this.imagePath = "../../assets/img/karla.png";
-    }
+    constructor() { }
     ngOnInit() {
     }
 }
