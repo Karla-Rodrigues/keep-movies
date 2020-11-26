@@ -26,22 +26,23 @@
 
                   <ng-template [ngIf]="moviesList.totalResults" [ngIfElse]="none">
 
-                        <span class="pageButton" type="submit" (click)="PreviousPage()">
-                              <i class="fas fa-chevron-left"></i>
-                        </span>
+                        <ng-template [ngIf]="start > 1">
+
+                              <span class="pageButton" type="submit" (click)="PreviousPage()">
+                                    <i class="fas fa-chevron-circle-left"></i>
+                              </span>
+
+                        </ng-template>
 
                         <ng-template [ngIf]="moviesList.totalResults > end" [ngIfElse]="endList">
                               <h4> {{start}} to {{end}} from {{moviesList.totalResults}} </h4>
                               <span class="pageButton" type="submit" (click)="NextPage()">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-chevron-circle-right"></i>
                               </span>
                         </ng-template>
 
                         <ng-template #endList>
                               <h4> {{start}} to {{moviesList.totalResults}} from {{moviesList.totalResults}} </h4>
-                              <span class="pageButton" type="submit">
-                                    <i class="fas fa-chevron-right"></i>
-                              </span>
                         </ng-template>
 
                   </ng-template>
