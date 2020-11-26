@@ -4,7 +4,8 @@
 
             <div class="banner-search">
 
-                  <input class="searchTerm" type="text" [(ngModel)]="name" placeholder="Start here!">
+                  <input class="searchTerm" type="text" (keydown.enter)="FetchMovies()" [(ngModel)]="name"
+                        placeholder="Start here!">
 
                   <select class="searchType" [(ngModel)]="type">
                         <option value="all" selected="selected">All</option>
